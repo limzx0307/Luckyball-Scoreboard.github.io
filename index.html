@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luckyball Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label id="title">Luckyball Scoreboard</label>
+    <input type="button" id="resetAll" value="Reset All"><br>
+    <input type="radio" id="threePlayers" name="playerCount">
+    <label>3P</label>
+    <input type="radio" id="fourPlayers" name="playerCount">
+    <label>4P</label>
+
+    <div id="inputField">
+        <label id="player1NameLabel">Enter Player 1 Name: </label>
+        <input type="text" id="player1NameInput"><br>
+        <label id="player2NameLabel">Enter Player 2 Name: </label>
+        <input type="text" id="player2NameInput"><br>
+        <label id="player3NameLabel">Enter Player 3 Name: </label>
+        <input type="text" id="player3NameInput"><br>
+        <label id="player4NameLabel">Enter Player 4 Name: </label>
+        <input type="text" id="player4NameInput"><br><br>
+    
+        <label id="ballPriceLabel">Ball Price:</label>
+        <input type="text" id="ballPriceText"><br>
+        <label id="gamePriceLabel">Game Price:</label>
+        <input type="text" id="gamePriceText"><br><br>
+    </div>    
+
+    <button id="startGameButton">Start Game!</button><br><br>
+
+    <div id="container">
+        <table id="scoreboard">
+            <tr id="playerNameColumn">
+                <th>A to B</th>
+                <th id="player1NameColumn">Player 1</th>
+                <th id="player2NameColumn">Player 2</th>
+                <th id="player3NameColumn">Player 3</th>
+                <th id="player4NameColumn">Player 4</th>
+            </tr>
+            <tr id="player1Row">
+                <th id="player1NameRow">Player 1</th>
+                <td id="score11"></td>
+                <td id="score12">0</td>
+                <td id="score13">0</td>
+                <td id="score14">0</td>
+            </tr>
+            <tr id="player2Row">
+                <th id="player2NameRow">Player 2</th>
+                <td id="score21">0</td>
+                <td id="score22"></td>
+                <td id="score23">0</td>
+                <td id="score24">0</td>
+            </tr>
+            <tr id="player3Row">
+                <th id="player3NameRow">Player 3</th>
+                <td id="score31">0</td>
+                <td id="score32">0</td>
+                <td id="score33"></td>
+                <td id="score34">0</td>
+            </tr>
+            <tr id="player4Row">
+                <th id="player4NameRow">Player 4</th>
+                <td id="score41">0</td>
+                <td id="score42">0</td>
+                <td id="score43">0</td>
+                <td id="score44"></td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+        <label id="player1Id">Player 1</label>
+        <button id="player1PublicButton">Public</button>
+        <button id="player1PrivateButton">Private</button>
+        <button id="player1FoulButton">Foul</button>
+        <input type="radio" id="player1Add" name="scoreRadio1">
+        <label>Add</label>
+        <input type="radio" id="player1Undo" name="scoreRadio1">
+        <label>Undo</label>
+        <br>
+
+        <label id="player2Id">Player 2</label>
+        <button id="player2PublicButton">Public</button>
+        <button id="player2PrivateButton">Private</button>
+        <button id="player2FoulButton">Foul</button>
+        <input type="radio" id="player2Add" name="scoreRadio2">
+        <label>Add</label>
+        <input type="radio" id="player2Undo" name="scoreRadio2">
+        <label>Undo</label>
+        <br>
+
+        <label id="player3Id">Player 3</label>
+        <button id="player3PublicButton">Public</button>
+        <button id="player3PrivateButton">Private</button>
+        <button id="player3FoulButton">Foul</button>
+        <input type="radio" id="player3Add" name="scoreRadio3">
+        <label>Add</label>
+        <input type="radio" id="player3Undo" name="scoreRadio3">
+        <label>Undo</label>
+        <br>
+
+        <label id="player4Id">Player 4</label>
+        <button id="player4PublicButton">Public</button>
+        <button id="player4PrivateButton">Private</button>
+        <button id="player4FoulButton">Foul</button>
+        <input type="radio" id="player4Add" name="scoreRadio4">
+        <label>Add</label>
+        <input type="radio" id="player4Undo" name="scoreRadio4">
+        <label>Undo</label>
+        <br>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
