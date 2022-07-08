@@ -29,9 +29,24 @@
         <input type="text" id="ballPriceText"><br>
         <label id="gamePriceLabel">Game Price:</label>
         <input type="text" id="gamePriceText"><br><br>
-    </div>    
 
-    <button id="startGameButton">Start Game!</button><br><br>
+        <button id="startGameButton">Start Game!</button><br><br>
+    </div>
+
+    <hr>
+
+    <div id="waterField">
+        <label id="playerWaterField">Water:</label><br>
+        <label id="player1WaterField">Player 1: </label>
+        <label id="player1WaterScore">0</label><br>
+        <label id="player2WaterField">Player 2: </label>
+        <label id="player2WaterScore">0</label><br>
+        <label id="player3WaterField">Player 3: </label>
+        <label id="player3WaterScore">0</label><br>
+        <label id="player4WaterField">Player 4: </label>
+        <label id="player4WaterScore">0</label><br>
+        <br>
+    </div>
 
     <div id="container">
         <table id="scoreboard">
@@ -45,34 +60,33 @@
             <tr id="player1Row">
                 <th id="player1NameRow">Player 1</th>
                 <td id="score11"></td>
-                <td id="score12">0</td>
-                <td id="score13">0</td>
-                <td id="score14">0</td>
+                <td id="score12"></td>
+                <td id="score13"></td>
+                <td id="score14"></td>
             </tr>
             <tr id="player2Row">
                 <th id="player2NameRow">Player 2</th>
-                <td id="score21">0</td>
+                <td id="score21"></td>
                 <td id="score22"></td>
-                <td id="score23">0</td>
-                <td id="score24">0</td>
+                <td id="score23"></td>
+                <td id="score24"></td>
             </tr>
             <tr id="player3Row">
                 <th id="player3NameRow">Player 3</th>
-                <td id="score31">0</td>
-                <td id="score32">0</td>
+                <td id="score31"></td>
+                <td id="score32"></td>
                 <td id="score33"></td>
-                <td id="score34">0</td>
+                <td id="score34"></td>
             </tr>
             <tr id="player4Row">
                 <th id="player4NameRow">Player 4</th>
-                <td id="score41">0</td>
-                <td id="score42">0</td>
-                <td id="score43">0</td>
+                <td id="score41"></td>
+                <td id="score42"></td>
+                <td id="score43"></td>
                 <td id="score44"></td>
             </tr>
         </table>
 
-        <br>
         <br>
 
         <label id="player1Id">Player 1</label>
@@ -105,17 +119,20 @@
         <label>Undo</label>
         <br>
 
-        <label id="player4Id">Player 4</label>
-        <button id="player4PublicButton">Public</button>
-        <button id="player4PrivateButton">Private</button>
-        <button id="player4FoulButton">Foul</button>
-        <input type="radio" id="player4Add" name="scoreRadio4">
-        <label>Add</label>
-        <input type="radio" id="player4Undo" name="scoreRadio4">
-        <label>Undo</label>
-        <br>
-
+        <div id="Player4Buttons">
+            <label id="player4Id">Player 4</label>
+            <button id="player4PublicButton">Public</button>
+            <button id="player4PrivateButton">Private</button>
+            <button id="player4FoulButton">Foul</button>
+            <input type="radio" id="player4Add" name="scoreRadio4">
+            <label id="player4AddLabel">Add</label>
+            <input type="radio" id="player4Undo" name="scoreRadio4">
+            <label id="player4UndoLabel">Undo</label>
+            <br>
+        </div>
     </div>
+
+    <hr>
 
     <script src="script.js"></script>
 </body>

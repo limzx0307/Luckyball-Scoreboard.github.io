@@ -17,3 +17,8 @@ table, th, td {
     border-collapse: collapse;
     text-align: center;
 }
+
+#playerWaterField {
+    font-size: 18px;
+    font-weight: 700;
+}
