@@ -1,6 +1,5 @@
 let ballPrice, gamePrice;
 let is4Players, isAdd, isGame;
-let scoreItem1, scoreItem2, scoreItem3
 let people; // People variables is when Private ball goes in and only one person effect so naming not include 1, 2, 3
 let s1, s2, s3;
 
@@ -233,10 +232,7 @@ function FoulScore(score, isAdd, people) {      // Same as PrivateScore, may cha
 //#endregion
 
 // Alert user that the score is already zero and that might cause error
-function Alert_Undo() {
-    alert("Hello, please think twice");
-    alert("Someone score is already zero");
-}
+function Alert_Undo() { alert("Hello, please think twice, someone score is already zero"); }
 
 // Initialize the variables just to make things look clear
 function Init() {
@@ -244,6 +240,9 @@ function Init() {
     ballPrice = Number(document.getElementById("ballPriceText").value);
     gamePrice = Number(document.getElementById("gamePriceText").value);
 
+    // Set Game Name
+    document.getElementById("gameNameText").textContent = "Game: " + document.getElementById("gameNameInput").value;
+    
     is4Players = document.getElementById("fourPlayers").checked ? true : false;
 
     if (!is4Players) Remove_Player4();
@@ -252,6 +251,9 @@ function Init() {
 // Update the name in label near input fields, table
 function Set_All_Name() {
     console.log("Set_All_Name Start")
+
+    document.getElementById("gameLabel").textContent = "Game: " + document.getElementById("gameNameInput").value;
+
     if (is4Players) {
         document.getElementById("player1NameColumn").textContent = document.getElementById("player1NameInput").value;
         document.getElementById("player1NameRow").textContent = player1Name = document.getElementById("player1NameInput").value;
@@ -307,8 +309,10 @@ function Set_All_Name() {
 // Remove input field to make the interface look clear
 function Remove_All_Input() {
     console.log("Remove_All_Input Start")
-    let field = document.getElementById("inputField");
+    let gameNameField = document.getElementById("gameNameInputField");
+    gameNameField.removeChild(document.getElementById("gameNameInput"));
 
+    let field = document.getElementById("inputField");
     field.removeChild(document.getElementById("player1NameInput"));
     field.removeChild(document.getElementById("player2NameInput"));
     field.removeChild(document.getElementById("player3NameInput"));
