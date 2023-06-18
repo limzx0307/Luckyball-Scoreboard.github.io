@@ -10,10 +10,18 @@
 <body>
     <label id="title">Luckyball Scoreboard</label>
     <input type="button" id="resetAll" value="Reset All"><br>
+
+    <div id="gameNameInputField">
+        <label id="gameLabel">Game: </label>
+        <input type="text" id="gameNameInput"><br><br>
+    </div>
+    
     <input type="radio" id="threePlayers" name="playerCount">
     <label>3P</label>
     <input type="radio" id="fourPlayers" name="playerCount">
     <label>4P</label>
+
+    <br><br>
 
     <div id="inputField">
         <label id="player1NameLabel">Enter Player 1 Name: </label>
@@ -35,6 +43,12 @@
 
     <hr>
 
+    <div id="gameNameField">
+        <label id="gameNameText">Game: </label>
+    </div>
+
+    <br>
+
     <div id="waterField">
         <label id="playerWaterField">Water Fee:</label><br>
         <label id="player1WaterField">Player 1: </label>
@@ -45,8 +59,9 @@
         <label id="player3WaterScore">0</label><br>
         <label id="player4WaterField">Player 4: </label>
         <label id="player4WaterScore">0</label><br>
-        <br>
     </div>
+
+    <br><br>
 
     <div id="container">
         <table id="scoreboard">
@@ -87,14 +102,14 @@
             </tr>
         </table>
 
-        <br>
+        <br><br>
 
         <div id="Player1Buttons">
             <label id="player1Id">Player 1</label>
             <button id="player1PublicButton">Public</button>
             <button id="player1PrivateButton">Private</button>
             <button id="player1FoulButton">Foul</button>
-            <input type="radio" id="player1Add" name="scoreRadio1">
+            <input type="radio" id="player1Add" name="scoreRadio1" checked>
             <label id="player1AddLabel">Add</label>
             <input type="radio" id="player1Undo" name="scoreRadio1">
             <label id="player1UndoLabel">Undo</label>
@@ -108,7 +123,7 @@
             <button id="player2PublicButton">Public</button>
             <button id="player2PrivateButton">Private</button>
             <button id="player2FoulButton">Foul</button>
-            <input type="radio" id="player2Add" name="scoreRadio2">
+            <input type="radio" id="player2Add" name="scoreRadio2" checked>
             <label id="player2AddLabel">Add</label>
             <input type="radio" id="player2Undo" name="scoreRadio2">
             <label id="player2UndoLabel">Undo</label>
@@ -122,7 +137,7 @@
             <button id="player3PublicButton">Public</button>
             <button id="player3PrivateButton">Private</button>
             <button id="player3FoulButton">Foul</button>
-            <input type="radio" id="player3Add" name="scoreRadio3">
+            <input type="radio" id="player3Add" name="scoreRadio3" checked>
             <label id="player3AddLabel">Add</label>
             <input type="radio" id="player3Undo" name="scoreRadio3">
             <label id="player3UndoLabel">Undo</label>
@@ -136,7 +151,7 @@
             <button id="player4PublicButton">Public</button>
             <button id="player4PrivateButton">Private</button>
             <button id="player4FoulButton">Foul</button>
-            <input type="radio" id="player4Add" name="scoreRadio4">
+            <input type="radio" id="player4Add" name="scoreRadio4" checked>
             <label id="player4AddLabel">Add</label>
             <input type="radio" id="player4Undo" name="scoreRadio4">
             <label id="player4UndoLabel">Undo</label>
