@@ -1,6 +1,8 @@
 * {
     font-family: 'Times New Roman', Times, serif;
     color: black;
+    margin-left: 5px;
+    margin-right: 20px;
 }
 
 #title {
@@ -19,6 +21,11 @@ table, th, td {
 }
 
 #playerWaterField {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
+}
+
+#gameNameField {
+    font-size: 20px;
+    font-weight: 1000;
 }
